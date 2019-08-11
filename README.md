@@ -8,4 +8,4 @@ This portfolio is based on mine curriculum. The main idea for this website is ju
 ## References
 
 I have some references here to _Jelena Jovanovic_ who made the Codepen of the __Waves__ on the bottom of the website.
-[her Codepen] (https://codepen.io/plavookac/pen/QMwObb)
+[her Codepen](https://codepen.io/plavookac/pen/QMwObb)
