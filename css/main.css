@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css?family=Red+Hat+Display:400,500,700&display=swap');
+
+/*------------ Global ------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+html {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 100;    
+}
+
+body {
+    width: 60%;
+    margin: auto;
+    background-color: white;
+}
+
+.blue{
+    color: #027BFF;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 400;
+    color: #17191A;
+}
+
+h2 {
+    font-size: 35px;
+    font-weight: 400;
+    color: #17191A;
+}
+
+h5 {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #17191A;
+}
+
+p {
+    color: #8F9EA5;
+    opacity: 0.8;
+    font-weight: 100;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+/*------------ Nav ------------*/
+
+.nav {
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+.contactMe, .navIcons {
+    flex: 1;
+}
+
+.GitHub, .LinkedIn {
+    height: 30px;
+}
+
+.navIcons {
+    text-align: right;
+}
+
+.navIcons a, .contactMe a, .contactMe img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.navIcons a {
+    margin-left: 40px;
+}
+
+.contactMe a {
+    color: #027BFF;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contactMe img {
+    margin-right: 10px;
+}
+
+
+/*------------ Landing ------------*/
+
+.landing {
+    height: 100vh;
+    position: relative;
+}
+
+.landingWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.MyPhoto {
+    height: 270px;
+}
+
+ul {
+    list-style: none;
+    margin-top: 30px;
+    line-height: 30px;
+}
+
+.landingL {
+    margin-top: 4em;
+}
+
+.scroll {
+    position: absolute;
+    bottom: 180px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/*------------ Skills ------------*/
+
+.skills {
+    text-align: center;
+    margin-bottom: 20em;
+}
+
+.skills p {
+    margin-bottom: 20px;
+    margin-top: -5px;
+}
+
+.skills img {
+    width: 80px;
+    margin: 30px 35px;
+}
+
+/*------------ Characteristcs ------------*/
+
+.charac {
+    text-align: center;
+    margin-bottom: 20em;
+}
+
+.charac p {
+    margin-bottom: 20px;
+    margin-top: -5px;
+}
+
+/*------------ Waves ------------*/
+
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+.waveWrapper {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1300px;
+    top: 2100px;
+    margin: auto;
+    transform: rotate(180deg);
+}
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 101%;
+    bottom: -1px;
+    background-image: linear-gradient(to top, #027BFF 40%, #0156B2 100%);
+}
+.bgTop {
+    z-index: 15;
+    opacity: 0.5;
+}
+.bgMiddle {
+    z-index: 10;
+    opacity: 0.75;
+}
+.bgBottom {
+    z-index: 5;
+}
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+.waveTop {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+   -webkit-animation: move-wave 3s;
+   -webkit-animation-delay: 1s;
+   animation-delay: 1s;
+}
+.waveMiddle {
+    background-size: 50% 120px;
+}
+.waveAnimation .waveMiddle {
+    animation: move_wave 10s linear infinite;
+}
+.waveBottom {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveBottom {
+    animation: move_wave 15s linear infinite;
+}
