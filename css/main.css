@@ -79,7 +79,7 @@ p {
     text-align: right;
 }
 
-.navIcons a, .contactMe a, .contactMe img {
+.navIcons button, .navIcons a, .contactMe button, .contactMe img {
     display: inline-block;
     vertical-align: middle;
 }
@@ -88,7 +88,7 @@ p {
     margin-left: 40px;
 }
 
-.contactMe a {
+.contactMe button {
     color: #027BFF;
     text-decoration: none;
     font-weight: 500;
@@ -97,7 +97,6 @@ p {
 .contactMe img {
     margin-right: 10px;
 }
-
 
 /*------------ Landing ------------*/
 
@@ -147,6 +146,12 @@ ul {
     }
 }
 
+@media screen and (max-width: 552px){
+    .contactMe .fale{
+        display:none;   
+    }
+}
+
 /*------------ Skills ------------*/
 
 .skills {
@@ -176,5 +181,5 @@ ul {
     margin-top: -5px;
 }
 
-/*------------ Waves ------------*/
+/*------------ Modal ------------*/
 
