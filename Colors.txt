@@ -1,3 +1,4 @@
 Icons grey - #8e8e8e
 Icons black - #181616
 Contact blue - #027BFF
+Normal Text Color (Grey) - #A4A4A4
